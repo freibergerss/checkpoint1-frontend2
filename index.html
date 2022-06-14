@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lista de indicações de leitura</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@1&display=swap');
+        </style>
+    </head>
+
+    <body>
+            
+        <main id="main">
+                
+            <h2>Ficha de Leitura:</h2>
+    
+            <div class="formSection">
+    
+                <form class="form1" action="/" method="POST">
+                    
+                    <label for="title">Título da Obra:</label>
+                        <input type="text" name="title" class="input" id="title" required>
+                    
+                    <label for="autor">Autor da obra:</label>
+                        <input type="text" name="autor" class="input" id="autor" required>
+                    
+                    <label for="image">Insira o link da imagem de capa:</label>
+                        <input type="url" name="image" class="input" id="image">
+
+                </form>
+
+                <form class="form2" action="/" method="POST">
+
+                    <label for="description">Comentários sobre a leitura:</label>
+                        <textarea name="description" class="input" id="description" cols="30" rows="50"></textarea>
+                            
+                    <label for="rating" required>Avaliação:</label>
+                        <select name="rating" id="rating" class="input">
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="1">1 estrela</option>
+                            <option value="2">2 estrelas</option>
+                            <option value="3">3 estrelas</option>
+                            <option value="4">4 estrelas</option>
+                            <option value="5">5 estrelas</option>
+                        </select>
+
+                </form>
+
+                <form class="form3" action="/" method="POST">
+                    
+                    <input type="submit" id="submit" value="Inserir">
+    
+                    <input type="reset" id="reset" value="Limpar">
+    
+                </form>
+    
+            </div>
+
+            <h1>Seleção de leituras para indicação</h1>
+
+            <div class="cardsSection">
+            
+            </div>
+
+        </main>
+
+        <footer>
+
+            <p class="footer-text">CERTIFIED TECH DEVELOPER - DIGITAL HOUSE</p>
+            
+            <p class="footer-text">Trabalho desenvolvido por: <a href="https://www.linkedin.com/in/gabrielle-ara%C3%BAjo-155839135/">Gabrielle R. de Araujo</a>, <a href="https://www.linkedin.com/in/laianebarbalho/">Laiane Barbalho</a> e <a href="https://www.linkedin.com/in/sabrina-freiberger/">Sabrina S. Freiberger</a></p>
+
+        </footer>
+
+        <script src="./js/creatingCards.js"></script>
+        <script src="./js/cleaningInputs.js"></script>
+
+    </body>
+    
+</html>
